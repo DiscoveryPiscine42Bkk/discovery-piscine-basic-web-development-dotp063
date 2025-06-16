@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Page Title</title>
-</head>
-<body>
+#!/bin/bash
 
-<h1>hello world</h1>
-
-</body>
-</html>
+if [ $# -eq 0 ]; then
+    echo "No arguments supplied"
+else
+    for arg in "$@"
+    do
+        echo "$arg"
+    done | head -n 3
+fi
