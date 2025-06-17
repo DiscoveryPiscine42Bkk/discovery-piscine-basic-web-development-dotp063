@@ -1,65 +1,44 @@
-/* Reset margin and padding */
-* {
+/* Reset */
+body, html {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
-html, body {
-  font-family: 'Arial', sans-serif;
-  height: 100%;
-  overflow-x: hidden;
-}
-
-/* Parallax effect for the background */
-.parallax-background {
+/* Parallax Sections */
+.parallax {
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
-  background: url('https://via.placeholder.com/1500x800') no-repeat center center fixed;
-  background-size: cover;
-  height: 100vh;
-  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  z-index: 1;
+  color: white;
+  font-size: 2rem;
 }
 
-/* Adjust second parallax image */
-.second-image {
-  background: url('https://via.placeholder.com/1500x800/ff5733') no-repeat center center fixed;
-  background-size: cover;
+.bg1 {
+  background-image: url('https://i0.wp.com/www.iurban.in.th/wp-content/uploads/2013/04/25560420-221319.jpg?ssl=1');
 }
 
-/* Center the text */
+.bg2 {
+  background-image: url('https://i0.wp.com/www.iurban.in.th/wp-content/uploads/2013/04/25560420-221334.jpg?ssl=1');
+}
+
+/* Centered Message */
 .message {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem 2rem;
+  border-radius: 10px;
 }
 
-.message h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.message p {
-  font-size: 1.5rem;
-}
-
-/* Black block */
-.black-block {
-  background-color: black;
-  color: white;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* Content Section */
+.content {
+  background-color: #000;
+  color: #fff;
   text-align: center;
-}
-
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
+  padding: 100px 20px;
 }
