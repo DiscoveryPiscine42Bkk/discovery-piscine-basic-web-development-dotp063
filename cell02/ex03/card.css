@@ -22,7 +22,7 @@
 .img {
     width: 100%;
     min-height: 200px;
-    background-image: url("p1.avif");
+    background-image: url("https://i.pinimg.com/236x/ab/3b/06/ab3b060571fa732523b7dbf80598a8e4.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -45,7 +45,7 @@
 .facebook {
     width: 20px;
     height: 20px;
-    background-image: url("facebook.jpg");
+    background-image: url("https://static.vecteezy.com/system/resources/previews/018/930/698/non_2x/facebook-logo-facebook-icon-transparent-free-png.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -54,7 +54,7 @@
 .ig {
     width: 15px;
     height: 15px;
-    background-image: url("ig.png");
+    background-image: url("https://static.vecteezy.com/system/resources/previews/018/930/415/non_2x/instagram-logo-instagram-icon-transparent-free-png.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
