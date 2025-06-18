@@ -1,103 +1,66 @@
-/* Reset all margin and padding */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.header {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
 }
 
-/* Body Styling */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+.box {
+    display: flex;
+    justify-content: center;
 }
 
-/* Profile Card Styling */
-.profile-card {
-  background-color: white;
-  width: 300px;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 1px 1px;
+    width: 200px;
+    border-radius: 5px;
 }
 
-/* Card Title */
-.card-title {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
+.img {
+    width: 100%;
+    min-height: 200px;
+    background-image: url("p1.avif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-/* Invisible Table (for alignment purposes) */
-.invisible-table {
-  width: 100%;
-  border-collapse: collapse;
+.name {
+    font-size: 24px;
+    padding: 10px;
+}
+.text {
+    font-size: 18px;
+    padding: 5px;
+}
+.contact {
+    background-color: black;
+    width: 100%;
+    color: aliceblue;
+    text-align: center;
+}
+.facebook {
+    width: 20px;
+    height: 20px;
+    background-image: url("facebook.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-/* Profile Picture */
-.profile-picture-cell {
-  text-align: center;
-  padding-bottom: 15px;
+.ig {
+    width: 15px;
+    height: 15px;
+    background-image: url("ig.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.profile-picture {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-/* User Login */
-.login {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 10px 0;
-}
-
-/* User Description */
-.description {
-  font-size: 16px;
-  color: #777;
-  margin-bottom: 15px;
-}
-
-/* Social Icons Styling */
-.social-links {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-bottom: 15px;
-}
-
-.social-icon img {
-  width: 25px;
-  height: 25px;
-  transition: transform 0.3s ease;
-}
-
-.social-icon img:hover {
-  transform: scale(1.2);
-}
-
-/* Contact Button Styling */
-.contact-button-cell {
-  text-align: center;
-}
-
-.contact-button {
-  background-color: #4CAF50;
-  color: white;
-  text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.contact-button:hover {
-  background-color: #45a049;
+.social {
+    display: flex;
+    align-items: center;
 }
