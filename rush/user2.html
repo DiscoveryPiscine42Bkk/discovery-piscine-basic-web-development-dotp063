@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>User Profile</title>
+</head>
 <head>
 <style>
 ul {
@@ -29,7 +30,8 @@ li a {
 li a:hover:not(.active) {
   background-color: #111;
 }
-
+.active {
+  background-color:palevioletred;
 </style>
 </head>
 <body>
@@ -38,47 +40,105 @@ li a:hover:not(.active) {
   <li><a href="userprofile.html">Home</a></li>
   <li><a href="user1.html">psinghas</a></li>
   <li><a href="user2.html">tphrasav</a></li>
-  
+  <li style="float:right"><a class="active" href="https://siet.kmitl.ac.th/" target="_blank">siet KMITL</a></li>
 </ul>
 
 </body>
 </html>  
 <html>
 <style>
-  body {
-        background-image: url("image.jpg");
-        background-size: cover;
-        background-position:center ;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        z-index: 0;
-        max-width: fit-content;
+  
+    .image {
+      
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
     .text {
         text-align: center;
+        color: rgb(0, 0, 0);
         justify-content: center;
-        color: aliceblue;
-        padding: 20px;
+        padding: 20px;    
     }
+
     .box {
-        max-width:max-content;
-        max-height:max-content;
-        background-color:#fff
-    }
-    .middle {
-        justify-items: center;
-        align-items: center;
-        display: flex;
-    }
+        max-width: max-content;
+        max-height: max-content;
+        background-color: #fff;
+    }    
+     .image2 {
+    background-position:left;
+    background-repeat: no-repeat;
+}
+  .text2 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #111;
+    font-size: 20px;
+    margin: 5px 60px 20px 60px;
+}
+  .image3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    margin-top:10px;
+  }
+  .text3 {
+    text-align: center;
+        color: rgb(0, 0, 0);
+        justify-content: center;
+        padding: 10px;
+        font-family: 40px;
+        font-size: larger;
+
+  }
 </style>
+<div class="image2">
+  <img width="500px" height="300px" 
+  src="https://www.kmitlalumni.org/wp-content/uploads/2022/11/%E0%B8%84%E0%B8%A3%E0%B8%B8%E0%B8%A8%E0%B8%B2%E0%B8%AA%E0%B8%95%E0%B8%A3%E0%B9%8C-600x400.png"
+</div>
+<div class="image3">
+      <img width="1000px " height="600px"
+      src="https://www.kmitl.ac.th/sites/default/files/2021-09/20201026_154013-scaled-oz0v68dlcjyo3qbnu9wkt6lqwhwtig1cm8wavuhbxq.jpg"
+</div>
+<div class="text3">
+        <p>
+            เนื้อหาที่เรียนในสาขาออกแบบภายใน
+        </p>
+</div>
+<div class="text">
+        <p>
+          ในชั้นปีต้นๆ  น้องๆ  จะได้เรียนรู้เกี่ยวกับความรู้ขั้นพื้นฐานการออกแบบ เครื่องมือชั่ง เช่น การตีลาย วิจิตรศิลป์ ศิลปะต่างๆ ที่จำเป็นอีกทั้งน้องๆ  จะได้เรียนรู้เกี่ยวกับ ทักษะการออกแบบสภาพแวดล้อมภายในและการเรียนการสอน สามารถนำความรู้ที่มีไปสอนในเชิงปฏิบัติได้  เพื่อเป็นบุคลากรหรือสามารถประกอบวิชาชีพครูครูเกี่ยวกับการออกแบบได้ 
+          ในชั้นปีที่ 4 น้องๆจะได้ลงพื้นที่ไปเรียนรู้เกี่ยวกับการเรียนการสอนในโรงเรียนต่างๆ ตามความสนใจเพื่อเป็นการทดลองการสอนในสิ่งที่ได้เรียนรู้มาได้เรียนรู้และเข้าถึงจิตวิญญาณความเป็นครู แถมยังได้มีการเข้าฝึกประสบการณ์กับบริษัทเกี่ยวกับการออกแบบทั้ง อาคารบ้านเรือน ตึก โรงแรม เพื่อให้น้องๆนั้นมีความรู้และประสบการณ์ทางด้านอาชีพจริงๆ พร้อมที่จะประกอบอาชีพได้ไปจนถึงการทำวิทยานิพนธ์ และการวิจัยด้านการออกแบบ  มีการลงพื้นที่เพื่อสร้างความเข้าใจวัฒนธรรมที่จะนำไปสู่การออกแบบอย่างสร้างสรรค์และเหมาะสมเพื่อการพัฒนาชุมชนได้อย่างยั่งยืน
+        </p>
+</div>
 <div class="box">
-    <div class="middle">
-        <img height="100px" width="100px" ma
-        src="https://instagram.fbkk29-1.fna.fbcdn.net/v/t1.15752-9/504978416_1864626547705864_7526394225424714536_n.jpg?stp=dst-jpg_s640x640_tt6&_nc_cat=101&ccb=1-7&_nc_sid=0024fc&_nc_ohc=Az2mRd0bq6oQ7kNvwFaQdYj&_nc_oc=Adn384J4UGIGCP427F1-84HUHDA2wEQ6B8h7dD7Xq9h50oPVw4PdM7HBQD8m2YhvO_0&_nc_zt=23&_nc_ht=instagram.fbkk29-1.fna&oh=03_Q7cD2gHl56NhDzf2g_GulY538HJF_6nHiOyOFxkCDh9XFBvy9A&oe=687B5193"
+    <div class="image">
+        <img width="200px" height="250px"
+        src="https://instagram.fbkk5-6.fna.fbcdn.net/v/t1.15752-9/504978416_1864626547705864_7526394225424714536_n.jpg?stp=dst-jpg_s640x640_tt6&_nc_cat=101&ccb=1-7&_nc_sid=0024fc&_nc_ohc=Az2mRd0bq6oQ7kNvwHAg44l&_nc_oc=Adn1mIk8TBqVQo9gpngjtol6T9M5g8MBvtz43X_0BUH4yK-HhWKWm5MfDi_KFCUtP6g&_nc_zt=23&_nc_ht=instagram.fbkk5-6.fna&oh=03_Q7cD2gEY98iiQFZwclk953Aix_5tg90pyS_H-6hV0gn3LvVQDw&oe=687B89D3">
     </div>
     <div class="text">
-        <p>ชื่อ-นามสกุล:ทัตพิชชา พระสว่าง</p>
-        <p>ชื่อเล่น:ภีม</p>
-        <p>คณะ:คณะครุศาสตร์อุตสาหกรรมและเทคโนโลยี  สาขา:สาขาวิชาการออกแบบสภาพแวดล้อมภายใน (</p>
-        <p></p>
+        <p>
+            ชื่อ-นามสกุล นางสาวทัตพิชชา พระสว่าง
+        <p>
+            ชื่อเล่น ภีม  
+        </p>   
+        <p>
+            คณะครุศาสตร์อุตสาหกรรมและเทคโนโลยี
+            ( สาขาออกเเบบสภาพเเวดล้อมภายใน 5 ปี )
+        </p>
+        
+    <div class="text2">Contact</div>
+    <div>
+      <a href="https://www.instagram.com/_oddl_t/profilecard/?igsh=MWs2aThpaHk3N3ptMw==" target="_blank">
+      <img width="50px" height="50px"
+      src="https://static.vecteezy.com/system/resources/previews/018/930/415/non_2x/instagram-logo-instagram-icon-transparent-free-png.png">
     </div>
-</div>
+    
+    
+   
+     

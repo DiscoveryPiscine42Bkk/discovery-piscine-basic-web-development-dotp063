@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>User Profile</title>
-  <link rel="stylesheet" href="user1.css">
 </head>
 <head>
 <style>
@@ -31,7 +30,8 @@ li a {
 li a:hover:not(.active) {
   background-color: #111;
 }
-
+.active {
+  background-color:palevioletred;
 </style>
 </head>
 <body>
@@ -40,28 +40,19 @@ li a:hover:not(.active) {
   <li><a href="userprofile.html">Home</a></li>
   <li><a href="user1.html">psinghas</a></li>
   <li><a href="user2.html">tphrasav</a></li>
-  
+  <li style="float:right"><a class="active" href="https://siet.kmitl.ac.th/" target="_blank">siet KMITL</a></li>
 </ul>
 
 </body>
 </html>  
 <html>
 <style>
-  body {
-        background-image: url("image.jpg");
-        background-size: cover;
-        background-position:center ;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        z-index: 0;
-        max-width: fit-content;
-
-    .photo {
-        width: 100px;
-        height: 100px;
+  
+    .image {
+      
         display: flex;
-        justify-content: center;
         align-items: center;
+        flex-direction: column;
     }
 
     .text {
@@ -75,23 +66,49 @@ li a:hover:not(.active) {
         max-width: max-content;
         max-height: max-content;
         background-color: #fff;
-    } 
-    
-    .ig {
-        width: 15px;
-        height: 15px;
-        background-image: url("https://static.vecteezy.com/system/resources/previews/018/930/415/non_2x/instagram-logo-instagram-icon-transparent-free-png.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+    }    
+     .image2 {
+    background-position:left;
+    background-repeat: no-repeat;
 }
-    
+  .text2 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #111;
+    font-size: 20px;
+    margin: 5px 60px 20px 60px;
+}
+  .image3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    margin-top:10px;
+  }
+     
 </style>
+<div class="image2">
+  <img width="500px" height="250px" 
+  src="https://www.kmitlalumni.org/wp-content/uploads/2022/11/%E0%B8%84%E0%B8%A3%E0%B8%B8%E0%B8%A8%E0%B8%B2%E0%B8%AA%E0%B8%95%E0%B8%A3%E0%B9%8C-600x400.png"
+</div>
+<div class="image3">
+      <img width="1000px " height="600px"
+      src="https://admin.curriculum.kmitl.ac.th/api/media/file/karu.jpg"
+</div>
+<div class="text">
+        <p>
+            หลักสูตรครุศาสตร์อุตสาหกรรมและเทคโนโลยี สาขาออกแบบภายใน เรียนเกี่ยวกับการออกแบบสภาพแวดล้อมภายในอาคารและการสอน โดยเน้นการพัฒนาความรู้และทักษะทั้งด้านวิชาการและการปฏิบัติ เพื่อผลิตบุคลากรที่มีความสามารถทั้งในด้านการสอนและการออกแบบ. ผู้เรียนจะได้เรียนรู้ทั้งทฤษฎีและปฏิบัติเกี่ยวกับการออกแบบพื้นที่ภายใน การจัดวางผัง การเลือกใช้วัสดุ การจัดแสง รวมถึงการประยุกต์ใช้เทคโนโลยีที่เกี่ยวข้องกับการออกแบบ นอกจากนี้ ยังมีการเรียนรู้ด้านการจัดการเรียนการสอน เพื่อให้สามารถนำความรู้ไปประยุกต์ใช้ในการสอนและการฝึกอบรมในสายอาชีพที่เกี่ยวข้องได้
+        </p>
+</div>
 <div class="box">
     <div class="image">
-        <img src="https://media.discordapp.net/attachments/1385125948667727872/1385189880681988116/IMG_9024.jpg?ex=68552a1b&is=6853d89b&hm=ca47bb877127d4eb08300cfe0d5e3d18e1efe23f1541588cafc545a7e2e98566&=&format=webp&width=578&height=770">
-    </div>
-    <div class="text"
+        <img width="200px" height="250px"
+        src="https://media.discordapp.net/attachments/1385125948667727872/1385189880681988116/IMG_9024.jpg?ex=68552a1b&is=6853d89b&hm=ca47bb877127d4eb08300cfe0d5e3d18e1efe23f1541588cafc545a7e2e98566&=&format=webp&width=578&height=770">
+    </div> 
+        
+    <div class="text">
         <p>
             ชื่อ-นามสกุล นางสาวพัทธ์ธีรา สิงห์เสนา
         <p>
@@ -101,11 +118,14 @@ li a:hover:not(.active) {
             คณะครุศาสตร์อุตสาหกรรมและเทคโนโลยี
             ( สาขาออกเเบบสภาพเเวดล้อมภายใน 5 ปี )
         </p>
-        <p>
-            คณะครุศาสตร์อุตสาหกรรมบัณฑิต สาขาวิชาการออกแบบสภาพแวดล้อมภายใน (5 ปี) ที่ สจล. เป็นหลักสูตรที่บูรณาการความรู้ด้านการเป็นครูและการออกแบบสภาพแวดล้อมภายในเข้าด้วยกัน ผู้เรียนจะได้รับการพัฒนาทั้งความรู้ ทักษะ และประสบการณ์ในการจัดการเรียนรู้ การออกแบบสภาพแวดล้อมภายใน รวมถึงการอนุรักษ์ศิลปะ วัฒนธรรม และสิ่งแวดล้อม 
-        </p>
-    <div class="ig"></div>
-    <a href=""
-
-
+        
+    <div class="text2">Contact</div>
+    <div>
+      <a href="https://www.instagram.com/pr_xsa?igsh=MWsybWk4OGY4NTZsYQ%3D%3D&utm_source=qr" target="_blank">
+      <img width="50px" height="50px"
+      src="https://static.vecteezy.com/system/resources/previews/018/930/415/non_2x/instagram-logo-instagram-icon-transparent-free-png.png">
+    </div>
     
+    
+   
+     
