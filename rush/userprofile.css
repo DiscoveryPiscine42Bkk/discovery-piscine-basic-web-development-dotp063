@@ -1,0 +1,10 @@
+.text {
+  color: rgb(245, 248, 250);
+  z-index: 1;
+  text-align: center;
+  justify-content: center;
+  font-size: 200px;
+  font-weight: 200px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 170px;
+}
